@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+label {
+    color: rgb(51, 51, 51);
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+.form-control {
+    -webkit-box-shadow: 5px -8px 5px -6px rgba(0,0,0,0.39);
+    -moz-box-shadow: 5px -8px 5px -6px rgba(0,0,0,0.39);
+    box-shadow: 5px -8px 5px -6px rgba(0,0,0,0.39);
+}
+
+.video-container {
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+#video-title {
+    position: absolute;
+    top: 15vh;
+    z-index: 5000;
+    color: white;
+    font-size: 5em;
+    transform: translateY(-50%);
+    z-index: 10000;
+}
+
+
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+}
+
+
+.maincontainer {
+    position: relative;
+    top: 30vh;
+}
+
+#subtitle-container {
+    /*background-color: tomato;*/
+    color: white;
+    background: linear-gradient(323deg, #9ADCFF 0%, #9ADCFF 8%, tomato 8%);
+}
+
+#free {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#subtitle {
+    font-size: 1.1em;
+}
+#navigation-bar {
+    background: linear-gradient(323deg, tomato 0%, tomato 6%, #9ADCFF 6%);
+    font-weight: bolder;
+    z-index: 1000;
+
+}
+
+.navbar-toggler {
+    background-color: #9ADCFF;
+
+}
+
+#main-text-row {
+    position: relative;
+}
+
+
+#main-text-row::after {
+    content: "";
+    background: url("../images/mainbackground8.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+#main-text-container {
+    background-color: transparent;
+    
+}
+
+#main-text {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+#youtube {
+    color: red;
+    font-weight: bolder;
+}
+
+#ireland {
+    color: green;
+    font-weight: bolder;
+}
+
+#platform-name {
+    color: darkblue;
+    font-weight: bolder;
+}
+
+#ioana {
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: dimgray;
+}
+
+#preform-container-row {
+    background-color:  #9ADCFF;
+}
+
+#preform-container {
+    border-top: 4px dashed tomato;
+    border-bottom: 4px dashed tomato;
+    color: black;
+}
+
+#preform-container h5 {
+    font-size: 1.4em;
+}
+
+#formModal {
+}
+
+#form-row {
+    position: relative;
+}
+
+#form-row::after {
+    content: "";
+    background: url("../images/mainbackground7.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+#dataprotection {
+    font-size: 0.8em;
+}
+
+.social-icons {
+    font-size: 1.6em;
+    color: rgb(252, 97, 70);
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-linkedin {
+    color: #0e76a8;
+}
+
+#logo {
+    border-radius: 50%;
+}
+
+#language-boolean {
+    position: relative;
+    top: -5px;
+    width: 30px;
+    height: 20px;
+}
+
+#footerlinks-row {
+    border-top: 3px dashed tomato;
+}
+
+.footerlinks-container h6 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.footerlinks-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright-note {
+    background-color: tomato;
+    color: white;
+}
+
+
+/* Test navbar */
+
+#menu-container
+ {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+#footerlinks-row {
+    border-top: 2px dashed tomato;
+    background: rgb(2,0,36);
+    background: linear-gradient(323deg,tomato 0%, tomato 15%, #9ADCFF 15%);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 480px) {
+    #video-title {
+        font-size: 3em;
+    }
+
+    #preform-container h5 {
+        font-size: 1.3em;
+    }
+
+    .footerlinks-container a {
+        font-size: 0.9em;
+    }
+
+    .footerlinks-container h6 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #main-text-container p {
+        font-size: 1.2em;
+    }
+
+    #subtitle-container p {
+        font-size: 1.2em;
+    }
+}

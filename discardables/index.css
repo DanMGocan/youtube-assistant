@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    /*border: 1px solid black;*/
+}
+
+html,
+body,
+section {
+    min-height: 100vh;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5000;
+    opacity: 0.2;
+    background: url("./images/mainbackground11.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    
+}
+
+#logo {
+    opacity: 0.8;
+}
+
+#title {
+    font-size: 3.3em;
+    color: dimgrey;
+    font-weight: 500;
+    /*-webkit-text-stroke: 1px gray; */
+    /*text-shadow: 2px 2px 2px rgba(13,13,13,0.8); */
+}
+
+.language-select {
+    color: dimgrey;
+    font-size: 2em;
+    font-weight: 500;
+    /* text-shadow: 2px 2px 2px rgba(13,13,13,1); */
+    text-decoration: none;
+
+}
+
+#rom-flag,
+#eng-flag {
+    color: dimgray;
+}
+
+#copyright-note {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 480px) {
+    #copyright-note {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+/*
+@keyframes translatingContainer {
+    
+    100% {
+        left: -15%;
+        
+    }
+}
+
+@keyframes addingTitle {
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes logoOpacity {
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes removingPlay {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes addingLanguages {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes addingCopyrightNote {
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #logo {
+      width: 150%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+
+    #logo {
+        padding: 0;
+        margin: 0;
+    }
+
+    #title-container {
+        left: -4%;
+    }
+
+    #title {
+        font-size: 3.3em;
+        text-align: center;
+    }
+
+    @keyframes translatingContainer {
+        0% {
+            
+        }
+    
+        100% {
+            left: -7%;
+        }
+    }
+}
+*/
